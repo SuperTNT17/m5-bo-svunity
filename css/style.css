@@ -1,0 +1,290 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 2rem;
+    font-family: 'Lato', sans-serif;
+    background-color: #4475A2;
+}
+
+li {
+    list-style-type: none;
+}
+
+.nav {
+    width: 100%;
+    height: 10rem;
+    background-color: #7cb6ec;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #eee;
+    font-size: 100%;
+    padding: 2rem;
+    text-transform: uppercase;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.logo {
+    height: 170%;
+}
+
+.list {
+    display: flex;
+    gap: 4rem;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+.listItem>a {
+    text-decoration: none;
+    color: #303030;
+    text-align: center;
+    padding: 1.5rem 2.5rem 1.5rem 2.5rem;
+    border: 0.2rem #303030 solid;
+    border-radius: 0.5rem;
+}
+
+.listItem>a:hover {
+    background-color: hsl(209, 75%, 61%);
+}
+
+.cta {
+    width: 20rem;
+    height: 5rem;
+    font-size: 100%;
+    background-color: #E94560;
+    border: none;
+    color: #eee;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.cta:hover {
+    cursor: pointer;
+    background-color: hsl(350, 79%, 49%);
+    transition: 0.2s;
+}
+
+.banner {
+    height: 70vh;
+    width: 100%;
+    position: relative;
+    border-bottom: #eee 0.2rem solid;
+}
+
+.banner>figure {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom right, rgba(30, 42, 94, 0.8), 60%, rgba(225, 215, 183, 0.9)), url("../img/stock-blauwe-mensen.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.banner>figure>div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    color: #eee;
+}
+
+.heading {
+    font-size: 500%;
+    color: #eee;
+}
+
+.heading2 {
+    font-size: 200%;
+    color: #eee;
+}
+
+.over {
+    padding: 5rem;
+    height: 80rem;
+    border-bottom: 0.2rem #eee solid;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.over>header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.over>header>h2 {
+    font-family: 'Yellowtail', sans-serif;
+    font-size: 380%;
+    color: #eee;
+}
+
+.over>div {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+}
+
+.over>div>div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.over>div>div>p {
+    width: 55ch;
+    color: #eee;
+}
+
+.over>div>img {
+    width: 60rem;
+    height: 60rem;
+    object-fit: cover;
+}
+
+.sponsoren {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5rem;
+    gap: 5rem;
+}
+
+.sponsorenList {
+    display: flex;
+}
+
+.sponsorenList>li {
+    height: fit-content;
+    border: #303030 0.2rem solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sponsorenList>li>img {
+    width: 50%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    padding: 5rem;
+}
+
+form>div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+input {
+    background-color: hsl(209, 41%, 80%);
+    border: none;
+    border-bottom: 0.1rem #eee solid;
+    width: 40rem;
+    height: 3rem;
+}
+
+#submit {
+    background-color: #E94560;
+    border: none;
+    width: 15rem;
+    height: 4rem;
+    font-size: 100%;
+    color: #eee;
+}
+
+#submit:hover {
+    background-color: hsl(350, 79%, 49%);
+    cursor: pointer;
+}
+
+.events{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.event-card {
+    width: 30rem;
+    height: 40rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: #303030 0rem 0rem 1rem;
+}
+
+.event-card>h2 {
+    align-self: center;
+}
+
+.event-card>img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+    z-index: -1;
+}
+
+.event-card-footer {
+    background-color: rgb(233, 69, 96, 0.7);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.event-card-footer>i {
+    font-size: 125%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    border-top: 0.2rem #eee solid;
+    height: fit-content;
+}
+
+footer>p {
+    color: #eee;
+}
