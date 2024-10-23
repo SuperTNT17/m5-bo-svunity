@@ -36,6 +36,11 @@ li {
     z-index: 1;
 }
 
+.logo-link{
+    height: 100%;
+    transform: translateY(-2rem);
+}
+
 .logo {
     height: 170%;
 }
@@ -43,9 +48,6 @@ li {
 .list {
     display: flex;
     gap: 4rem;
-    width: 80%;
-    justify-content: center;
-    align-items: center;
 }
 
 .listItem>a {
@@ -59,6 +61,10 @@ li {
 
 .listItem>a:hover {
     background-color: hsl(209, 75%, 61%);
+}
+
+.nav-filler{
+    width: 20rem;
 }
 
 .cta {
@@ -242,6 +248,13 @@ input {
     flex-direction: column;
     position: relative;
     box-shadow: #303030 0rem 0rem 1rem;
+    transform: scale(1);
+    transition-duration: 300ms;
+}
+
+.event-card:hover{
+    transform: scale(1.05);
+    transition-duration: 300ms;
 }
 
 .event-card>h2 {
@@ -273,6 +286,25 @@ input {
 
 .event-card-footer>i {
     font-size: 125%;
+}
+
+.event-modal{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    background-color: #7cb6ec;
+    padding: 2rem;
+    box-shadow: rgba(48, 48, 48, 0.5) 1rem 1rem 1rem 100vw;
+}
+
+#modal-close{
+    position: absolute;
+    right: 2rem;
+    cursor: pointer;
+    width: fit-content;
+    font-size: 200%;
 }
 
 footer {
